@@ -1,0 +1,21 @@
+name: Print Context upload to Sarif
+
+on:
+  pull_request:
+  
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+
+jobs:
+  two:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Upload scan results to GitHub Security Tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'example.sarif'
