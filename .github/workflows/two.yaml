@@ -1,7 +1,8 @@
-name: Print Context upload to Sarif
+name: Not a required status check upload to Sarif
 
 on:
   pull_request:
+  workflow_call:
   
 permissions:
   contents: read
