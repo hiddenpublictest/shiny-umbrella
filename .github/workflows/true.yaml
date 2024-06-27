@@ -6,6 +6,6 @@ on:
   
 jobs:
   False:
-    runs-on: [self-hosted,linux,x64]
+    runs-on: ubuntu-latest
     steps:
       - run: true || false
