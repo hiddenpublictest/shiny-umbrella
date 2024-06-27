@@ -1,0 +1,11 @@
+name: Returns True
+
+on: 
+  pull_request:
+  workflow_dispatch:
+  
+jobs:
+  False:
+    runs-on: [self-hosted,linux,x64]
+    steps:
+      - run: true || false
