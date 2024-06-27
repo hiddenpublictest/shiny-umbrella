@@ -17,5 +17,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Upload scan results to GitHub Security Tab
         uses: github/codeql-action/upload-sarif@v3
+        if: always()
         with:
           sarif_file: 'example.sarif'
