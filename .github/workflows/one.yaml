@@ -1,4 +1,4 @@
-name: Print Context upload to Sarif
+name: Required Status Check - Upload Sarif file
 
 on:
   pull_request:
